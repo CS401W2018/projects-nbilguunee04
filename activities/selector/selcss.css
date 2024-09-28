@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#first{
+    color: rgb(239, 19, 71);
+}
+
+.bolder{
+    font-weight: 600;
+}
+.green{
+    color: green;
+}
+
+.bigger{
+    font-size: 24pt;
+}
+
+main .bigger{
+    font-family: Jokerman;
+}
