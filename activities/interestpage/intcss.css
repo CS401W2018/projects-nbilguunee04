@@ -1,0 +1,32 @@
+main p{
+    color: #2A3132 ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+nav a{
+    color: #763626;
+}
+.bolder{
+    font-weight: 600;
+}
+.bigger{
+    font-weight: 600;
+    color: #763626;
+}
+body {
+    background-color: #90AFC5;
+}
+
+
+.colorbolder{
+    font-weight: 600;
+    color: #763626;
+}
+.italic{
+    font-style: italic;
+}
+
+.de-emphasize{
+    color: rgb(111, 109, 109);
+}
+
