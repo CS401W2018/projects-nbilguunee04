@@ -1,7 +1,18 @@
 body{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: white;
+    background-image: url(blue.jpg); background-color:blue;
+
+}
+header{
+    background-image: url(flag.jpg); 
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.current{
+    color: grey;
 }
 
 .waves{
