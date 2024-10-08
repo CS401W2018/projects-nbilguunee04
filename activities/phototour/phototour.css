@@ -1,0 +1,23 @@
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: url(bluesky.jpg); background-color:blue;
+
+}
+nav{
+    background-image: url(flag.jpg);
+    background-repeat: no-repeat;
+    background-position: top right
+}
+li{
+    list-style: "\2764";
+}
+
+.current{
+    color: grey;
+}
+
+.waves{
+    width: 800px;
+}
