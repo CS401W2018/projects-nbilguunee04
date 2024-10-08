@@ -11,7 +11,7 @@ nav{
     background-position: top right
 }
 li{
-    list-style: "\2764";
+    list-style: url(canva.jpeg)
 }
 
 .current{
