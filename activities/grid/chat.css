@@ -1,0 +1,56 @@
+nav {
+    background-color: #444;
+    display: flex;
+    justify-content: space-around; /* Evenly space the links */
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block; /* Make the links block-level */
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+main {
+    display: flex;
+    flex: 1;
+}
+
+aside {
+    background-color: #f4f4f4;
+    width: 25%; /* Sidebar takes 25% width */
+    padding: 1rem;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for the profile cards */
+    gap: 1rem; /* Add space between the cards */
+    width: 75%; /* Main content takes 75% width */
+    padding: 1rem;
+}
+
+.profile-card {
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.profile-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
