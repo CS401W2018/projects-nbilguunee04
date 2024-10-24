@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: bisque;
+    color: lightseagreen;
+}
+header h1{
+    margin: 0;
+}
+
+nav{
+    display: none;
+}
+
+nav a{
+    display: block;
+    padding: 5px 10px;
+    color: bisque;
+    text-decoration: none;
+}
+
+.card{
+    width: 200px;
+    border: thin solid black;
+    box-shadow: 3px 3px 0px rgba(50,50,50,20%);
+    margin: 5px;
+    
+}
+
+.card img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
