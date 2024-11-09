@@ -12,44 +12,64 @@
     </header>
     <main>
         <form action="procsesing.html" method="post">
-            First Name <input type="text" name="first" value="Joe" required="required"> <br>
-            Last Name <input type="text" name="last" placeholder="Last Name"> <br>
-            Password:  <input type="Password" name="pass"><br>
-            <input type="checkbox" name="remember" checked> Remember me <br>
-            Grade: <input type="radio" value="Freshman"> Freshman <br>
-            <input type="radio" name="grade" value="Freshman"> Freshman <br>
-            <input type="radio" name="grade" value="Freshman"> Freshman <br>
-            <input type="radio" name="grade" value="Freshman"> Freshman <br>
-            <input type="radio" name="grade" value="Freshman"> Freshman <br>
-            <select name="State" id="State">
-                <option value="Hawaii">Hawaii</option>
-                <option value="Hawaii">Utah</option>
-                <option value="Hawaii"> selected Oregon</option>
-                <option value="Hawaii">IDAHO</option>
-            </select> <br>
-            <textarea name="comment" id=""></textarea>
-            <input type="submit">
+            <fieldset>
+                <legend>Sign up</legend>
+            <div class="form-row">
+                <label for="fname"> First Name</label>
+                <input id="name" type="text" name="first" value="Joe" required="required"> 
+            </div>
+            <div class="form-row">
+                Last Name <input type="text" name="last" placeholder="Last Name">
+            </div>
+            <div class="form-row">
+                Password:  <input type="Password" name="pass">
+            </div>
+        </fieldset>
+            <div class="check-row">
+                <input type="checkbox" name="remember" checked> Remember me
+            </div>
+            <div class="form-row">
+                Grade: <input type="radio" value="Freshman"> Freshman
+                <label><input type="radio" name="grade" value="Freshman"> Freshman </label>
+                <label><input type="radio" name="grade" value="Freshman"> Sophomore </label>
+                <label><input type="radio" name="grade" value="Freshman"> Junior </label>
+                <label><input type="radio" name="grade" value="Freshman"> Senior </label>
+            </div>
+            <div class="form-row">
+                <label for="State">
+                    <select name="State" id="State">
+                        State
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Hawaii">Utah</option>
+                        <option value="Hawaii"> selected Oregon</option>
+                        <option value="Hawaii">IDAHO</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <textarea name="comment" id=""></textarea>
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <input type="submit">
+                </label>
+            </div>
         </form>
     </main>
     <section>
         <h3>
-            The form tag has an "action" attribute. What does it do?
+            What are different ways to style your form?
         </h3>
         <p>
-            Action attribute specifiec the URL where the form data will be sent.
+            CSS grid, flexbox, html attributes, javascript.
         </p>
         <h3>
-            The form tag has a "method" attribute. What does it do?
+            Why does the professor like to use flex?
         </h3>
         <p>
-            Method attribute determines how the form data is sent. The most common methods are "get" and "post".
-        </p>
-        <h3>
-            What is the difference between a "POST" and a "GET"?
-        </h3>
-        <p>
-            GET appends form data to the URL, visible in the browser. <br>
-            POST sends form data in the request body, used for actions that change data.
+            Professer Slade likes flex because it's simple to use and makes it easy make changes to the content.
         </p>
     </section>
     <footer>

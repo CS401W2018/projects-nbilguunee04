@@ -1,3 +1,33 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+fieldset{
+    box-shadow: 3px 3px 3px rgba(20, 20, 20, 0.5);
+    background-color: lightpink;
+}
+
+legend{
+    border: thin solid #000;
+    background-color: lightblue;
+    padding: 10px;
+    color: black;
+}
+.form-row{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.form-row label{
+    width: 150px;
+    text-align: right;
+}
+
+.check-row{
+    display: flex;
+}
+
+@media only screen and (max-width: 600px){
+    .form-row{
+        flex-direction: auto;
+    }
+}
