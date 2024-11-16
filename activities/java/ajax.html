@@ -8,6 +8,7 @@
 <body>
     <header>Form processing</header>
     <main>
+        <div id="message"></div>
         <form action="processing.html" method="post" id="myForm">
             First Name: <input type="text" id="firstName" name="first" placeholder="First Name"> <br>
             Last Name: <input type="text" id="lastName" name="last" placeholder="Last Name"> <br>
@@ -32,51 +33,17 @@
     <footer>
         <p>&copy; 2024 Bilguunee Narmandakh</p>
     </footer>
-    <script>
-        document.getElementById("myForm").addEventListener("submit", function(event) {event.preventDefault();
-            const first=document.getElementById("firstName").value;
-            const last=document.getElementById("lastName").value;
-            const age=document.getElementById("age").value;
-
-            if (!first || !last) {
-                alert("Please provide your full name.");
-                return;
-            }
-
-            if (!age || age<18) {
-                alert("You must be 18 years or older to submit this form.");
-                return;
-            }
-
-            const data={
-                firstName: first,
-                lastName: last,
-                age: age
-            }
-            console.log(data);;
-        });
-    </script>
+    <script src="form.js"></script>
     <section>
-        <h3>
-            What is JavaScript? How did it get its name?</h3>
-        <p>JavaScript is a programming language used for creating interactive elements on websites. Original name was Mocha and later called Live script but soon got Javascript to ride on the popularity of Java.</p>
-        <h3>
-            Wha are the tow ways you can run JavaScript?
-        </h3>
+        <h3>What is AJAX?</h3>
         <p>
-            In a web browser and On a server.
+           It is a technique used to update parts of a web page dynamically without reloading the entire page.
         </p>
         <h3>
-            What was the most popular front-end js library?
+            Why do you put your JS Code in a separate file?
         </h3>
         <p>
-            jQuery
-        </p>
-        <h3>
-            What is the most popular front-end js library today?
-        </h3>
-        <p>
-            React
+            Makes the script reusable across multiple pages. Keeps HTML and JavaScript separate for clearner code.
         </p>
     </section>
 </body>

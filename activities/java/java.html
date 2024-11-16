@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>Form processing</header>
+    <main>
+        <form action="processing.html" method="post" id="myForm">
+            First Name: <input type="text" id="firstName" name="first" placeholder="First Name"> <br>
+            Last Name: <input type="text" id="lastName" name="last" placeholder="Last Name"> <br>
+            Password: <input type="password" name="pass" id="password"> <br>
+            <input type="checkbox" name="remember" checked id="remember"> Remember Me <br>
+            Age: <input type="number" name="age" id="age"> <br>
+            Class: 
+            <input type="radio" value="freshman"> Freshman <br>
+            <input type="radio" value="freshman"> Freshman <br>
+            <input type="radio" value="freshman"> Freshman <br>
+            <input type="radio" value="freshman"> Freshman <br>
+            State: <select name="state" id="state">
+                <option value="blank" disabled selected>Make Selection</option>
+                <option value="hi">Hawaii</option>
+                <option value="ca">California</option>
+                <option value="co">Colorado</option>
+                <option value="ut">Utah</option>
+            </select><br>
+            <input type="submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bilguunee Narmandakh</p>
+    </footer>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {event.preventDefault();
+            const first=document.getElementById("firstName").value;
+            const last=document.getElementById("lastName").value;
+            const age=document.getElementById("age").value;
+
+            if (!first || !last) {
+                alert("Please provide your full name.");
+                return;
+            }
+
+            if (!age || age<18) {
+                alert("You must be 18 years or older to submit this form.");
+                return;
+            }
+
+            const data={
+                firstName: first,
+                lastName: last,
+                age: age
+            }
+            console.log(data);
+        });
+    </script>
+    <section>
+        <h3>
+            What is JavaScript? How did it get its name?</h3>
+        <p>JavaScript is a programming language used for creating interactive elements on websites. Original name was Mocha and later called Live script but soon got Javascript to ride on the popularity of Java.</p>
+        <h3>
+            Wha are the tow ways you can run JavaScript?
+        </h3>
+        <p>
+            In a web browser and On a server.
+        </p>
+        <h3>
+            What was the most popular front-end js library?
+        </h3>
+        <p>
+            jQuery
+        </p>
+        <h3>
+            What is the most popular front-end js library today?
+        </h3>
+        <p>
+            React
+        </p>
+    </section>
+</body>
+</html>
