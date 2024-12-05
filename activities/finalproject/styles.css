@@ -61,3 +61,57 @@ img{
 .schedule tbody tr:nth-child(odd){
     background-color: lightgrey;
 }
+
+.form-row, .check-row{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.form-row label{
+    width: 150px;
+    text-align: right;
+}
+
+.spacer{
+    width: 150px;
+    text-align: right;
+}
+
+input:not([type='submit']):focus, select:focus, textarea:focus{
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 3px;
+    background-color: lightgray;
+}
+
+input[type='submit']{
+    padding: 5px;
+    background-color: lightblue;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px rgb(100, 100, 100, 25%);
+}
+
+fieldset{
+    background-color: lightyellow;
+    box-shadow: 5px 5px 3px rgb(100, 100, 100, 25%);
+}
+
+legend{
+    padding: 10px;
+    background-color: lightblue;
+    color: black;
+}
+
+@media only screen and (max-width: 600px){
+    .form-row, .check-row{
+        flex-direction: column;
+    }
+    .form-row label{
+        text-align: left;
+    }
+    .spacer{
+        text-align: left;
+    }
+}
