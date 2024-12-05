@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure in Mongolia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Adventure Trip in Mongolia</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cultural.html">Cultural</a>
+        <a href="adventure.html">Adventure</a>
+        <a href="wildlife.html">Wildlife</a>
+        <a href="form.html"class="current">Plan your Trip</a>
+        <a href="contact.html">Contacts Us</a>
+</nav>
+    <main>
+        <div class="message"></div>
+            <form action="prcessing.html" method="post" id="myForm">
+                First Name: <input type="text" name="first" id="firstName" placeholder="First Name"><br>
+                Last Name: <input type="text" id="lastName" name="last" placeholder="Last Name"><br>
+                Password: <input type="password" name="pass" id="password"><br>
+                <input type="checkbox" name="remember" checked id="remember"> Remember Me <br>
+                Age: <input type="number" name="age" id="age"><br>
+                Type:
+                <input type="radio" value="Regular">Regular <br>
+                <input type="radio" value="VIP">VIP <br>
+                Season: <select name="season" id="season">
+                    <option value="blank" disabled selected>Make Selection</option>
+                    <option value="summer">Summer</option>
+                    <option value="winter">Winter</option>
+                    <option value="fall">Fall</option>
+                    <option value="spring">Spring</option>
+                </select><br>
+                <input type="submit">
+
+            </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bilguunee Narmandakh</p>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>
