@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(background.jpg); background-color: lightblue;
+}
+nav{
+    display: flex;
+    background-color: orange;
+    justify-content: space-around;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+nav a{
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+.current{
+    color: lightgrey;
+}
+
+section{
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+.experience{
+    padding-top: 10px;
+}
+img{
+    width: 635px;
+}

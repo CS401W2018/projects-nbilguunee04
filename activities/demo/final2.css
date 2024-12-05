@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid lightgray;
+
+}
+
+nav a{
+    font-weight: bold;
+    color: lightsalmon;
+    
+}
+.info-section{
+    padding: 15px;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    background-color: lightgreen;
+}
+.info-section h2{
+    font-size: 20px;
+}
+.info-section p{
+    font-size: 12px;
+    color: darkblue;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
